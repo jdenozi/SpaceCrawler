@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/libraries/glad" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/libraries/glew" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/libraries/glew-cmake" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/libraries/glew_cmake" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/libraries/glfw" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/libraries/glm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/libraries/imgui" vcs="Git" />
+  </component>
+</project>
