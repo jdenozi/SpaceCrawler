@@ -4,3 +4,12 @@
 [submodule "libraries/GLM"]
 	path = libraries/GLM
 	url = https://github.com/g-truc/glm
+[submodule "libraries/GLFW"]
+    path = libraries/GLFW
+    url = https://github.com/glfw/glfw
+[submodule "libraries/GLAD"]
+    path = libraries/GLAD
+    url = https://github.com/Dav1dde/glad
+[submodule "libraries/IMGUI"]
+    path = libraries/IMGUI
+    url = https://github.com/ocornut/imgui
