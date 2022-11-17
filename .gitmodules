@@ -7,9 +7,3 @@
 [submodule "libraries/glfw"]
 	path = libraries/glfw
 	url = https://github.com/glfw/glfw
-[submodule "libraries/glad"]
-	path = libraries/glad
-	url = https://github.com/Dav1dde/glad
-[submodule "libraries/imgui"]
-	path = libraries/imgui
-	url = https://github.com/ocornut/imgui

@@ -49,18 +49,22 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${BUILD_PATH})
 find_package(OpenCL REQUIRED)
 message(STATUS "OpenCL included at ${OpenCL_INCLUDE_DIR}")
 
-#OpenGL
 find_package(OpenGL REQUIRED)
+
+include_directories(libraries/glad)
+include_directories(libraries/KHR)
+include_directories(libraries/imgui)
+include_directories(libraries/glfw)
+include_directories(include)
+
 
 add_definitions(-DGLEW_STATIC)
 add_subdirectory(libraries/glfw EXCLUDE_FROM_ALL)
-add_subdirectory(libraries/glew EXCLUDE_FROM_ALL)
-add_subdirectory(libraries/glm EXCLUDE_FROM_ALL)
 
 
-add_executable(${PROJECT_NAME} src/main.cpp ${SOURCES} ${HEADER} ${SHADERS})
+add_executable(${PROJECT_NAME} sources/main.cpp ${SOURCES} ${HEADER} ${SHADERS})
 target_include_directories(${PROJECT_NAME} PUBLIC libraries/imgui)
-target_link_libraries( ${PROJECT_NAME} ${OPENGL_LIBRARIES} glfw glm libglew_static)
+target_link_libraries( ${PROJECT_NAME} ${OPENGL_LIBRARIES} glfw)
 
 
 message(STATUS "Copy resources  ${CMAKE_CURRENT_SOURCE_DIR}/resources  to ${CMAKE_CURRENT_BINARY_DIR}/resources")
